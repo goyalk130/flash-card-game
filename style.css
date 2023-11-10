@@ -1,6 +1,7 @@
 * {
     --primary-bg : #A52FC1;
     --bubles-color : #AE44C8;
+    --contra:#29282a;
 }
 *{
     box-sizing: border-box;
@@ -63,6 +64,33 @@
     height: 100px;
     top: -10px;
     left: -20px;
+}
+
+/* navbar */
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--contra);
+    height: 3rem;
+    z-index: 100;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    gap: 2;
+    padding: 0 1rem;
+}
+nav > div{
+    flex-grow: 1;
+}
+.log-con{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.log-con > img{
+        height: 50%;
 }
 
 @media (max-width:768px) {
