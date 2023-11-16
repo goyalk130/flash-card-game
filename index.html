@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <script type="text/javascript" src="./index.js"></script>
+    <script type="text/javascript" src="./index.js" defer></script>
     <title>Document</title>
   </head>
   <body>
@@ -18,10 +18,18 @@
       <nav>
         <div class="log-con"><img src="./yum.png" /></div>
         <div class="user-info-con">
-            <h4>Karan Goyal</h4>
-            <img src="./avatar.png" />
+          <h4>Karan Goyal</h4>
+          <img src="./avatar.png" />
         </div>
       </nav>
+
+      <section class="user-name-input-con">
+        <div class="input-wrapper">
+          <label for="name">Enter Name</label>
+          <input type="text" name="name" id="name" />
+        </div>
+        <button class="add-name-button">Submit</button>
+      </section>
     </main>
   </body>
 </html>
