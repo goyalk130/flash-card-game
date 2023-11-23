@@ -161,6 +161,9 @@ nav > div{
     padding: 0.3rem;
 }
 
+.hide{
+    display: none !important;
+}
 
 @media (max-width:768px) {
     .bubles{
@@ -202,4 +205,5 @@ nav > div{
         left: 180px;
     }
 }
+
 
