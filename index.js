@@ -6,12 +6,12 @@ const userNameInputtCon = document.querySelector(".user-name-input-con")
 
 
 
-nameSubmitButton.addEventListener("click",()=>{
+nameSubmitButton.addEventListener("click", ()=>{
     console.log(nameinput.value)
     loggedUser.innerHTML = nameinput.value
+
+     console.log(userNameInputtCon.classList)
+    userNameInputtCon.classList.toggle("hide")
     
-    console.log(userNameInputtCon.classList)
-    userNameInputtCon.classList.add("karan")
-    console.log(userNameInputtCon.classList)
 })
 

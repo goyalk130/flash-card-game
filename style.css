@@ -1,14 +1,16 @@
 * {
-    --primary-bg : #A52FC1;
-    --bubles-color : #AE44C8;
-    --contra:#29282a;
+    --primary-bg: #A52FC1;
+    --bubles-color: #AE44C8;
+    --contra: #29282a;
 }
-*{
+
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-body{
+
+body {
     overflow: hidden;
     width: 100vw;
     height: 100vh;
@@ -18,7 +20,7 @@ body{
     padding: 0.3rem;
 }
 
-.main-con{
+.main-con {
     height: 100%;
     width: 100%;
     background: var(--primary-bg);
@@ -31,46 +33,53 @@ body{
     border: 2px solid black;
 }
 
-.bubles{
+.bubles {
     width: 300px;
     height: 300px;
     border-radius: 50%;
     background: var(--bubles-color);
     position: absolute;
 }
-.bubles:nth-child(1){
+
+.bubles:nth-child(1) {
     top: -30px;
     right: -50px;
 }
-.bubles:nth-child(2){
+
+.bubles:nth-child(2) {
     width: 150px;
     height: 150px;
     bottom: 60px;
 }
-.bubles:nth-child(3){
+
+.bubles:nth-child(3) {
     width: 200px;
     height: 200px;
     bottom: 100px;
     left: 80px;
 }
-.bubles:nth-child(4){
+
+.bubles:nth-child(4) {
     width: 100px;
     height: 100px;
     top: 70px;
     left: 250px;
 }
-.bubles:nth-child(5){
+
+.bubles:nth-child(5) {
     width: 170px;
     height: 170px;
     top: 70px;
 }
-.bubles:nth-child(6){
+
+.bubles:nth-child(6) {
     width: 350px;
     height: 350px;
     bottom: -150px;
     right: -50px;
 }
-.bubles:nth-child(7){
+
+.bubles:nth-child(7) {
     width: 100px;
     height: 100px;
     top: -10px;
@@ -79,7 +88,7 @@ body{
 
 /* navbar */
 
-nav{
+nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -92,21 +101,23 @@ nav{
     gap: 2;
     padding: 0 1rem;
 }
-nav > div{
+
+nav>div {
     flex-grow: 1;
 }
-.log-con{
+
+.log-con {
     height: 100%;
     display: flex;
     align-items: center;
 }
 
-.log-con > img{
-        height: 50%;
+.log-con>img {
+    height: 50%;
 }
 
 
-.user-info-con{
+.user-info-con {
     display: flex;
     align-items: center;
     justify-content: right;
@@ -114,14 +125,15 @@ nav > div{
     gap: 1rem;
     color: white;
 }
-.user-info-con > img{
-        height: 80%;
-        background: white;
-        border-radius: 100%;
-        border: 2px solid var(--bubles-color);
+
+.user-info-con>img {
+    height: 80%;
+    background: white;
+    border-radius: 100%;
+    border: 2px solid var(--bubles-color);
 }
 
-.user-name-input-con{
+.user-name-input-con {
     display: flex;
     flex-direction: column;
     background: white;
@@ -130,30 +142,32 @@ nav > div{
     border-radius: 1rem;
     z-index: 100;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    justify-content:space-around ;
+    justify-content: space-around;
 }
-.input-wrapper{
+
+.input-wrapper {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     justify-content: center;
     align-items: center;
 }
-.input-wrapper label{
+
+.input-wrapper label {
     font-size: 1.5rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
 
 }
 
-.input-wrapper input{
+.input-wrapper input {
     border: 1px solid black;
     border-radius: 0.2rem;
     outline: none;
     padding: 0.3rem 0.5rem;
 }
 
-.add-name-button{
+.add-name-button {
     background: var(--primary-bg);
     color: white;
     border-radius: 0.3rem;
@@ -161,49 +175,120 @@ nav > div{
     padding: 0.3rem;
 }
 
-.hide{
+.main-game-con {
+    display: flex;
+    border: 2px solid red;
+    height: 100%;
+    width: 100%;
+    padding: 4rem;
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-card {
+    background: rgba(0, 0, 0, 0.176);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(11px);
+    border: 1px solid rgba(189, 69, 224, 0.83);
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.game-card img {
+    width: 14rem;
+    border-radius: 0.5rem;
+}
+
+.game-card div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.9rem;
+    width: 80%;
+}
+ul li{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+ul li button{
+    background: white;
+    color: black;
+    border: none;
+    outline: none;
+    padding: 0.5rem 0.6rem;
+    letter-spacing: 0.1rem;
+    border-radius: 0.4rem;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.7rem;
+}
+ul li button:hover{
+    color: var(--bubles-color);
+}
+
+.hide {
     display: none !important;
 }
 
 @media (max-width:768px) {
-    .bubles{
+    .bubles {
         display: none;
     }
-    .bubles:nth-child(1){
+
+    .bubles:nth-child(1) {
         scale: 0.8;
         display: block;
 
     }
-    .bubles:nth-child(2){
+
+    .bubles:nth-child(2) {
         display: block;
 
     }
-    .bubles:nth-child(3){
+
+    .bubles:nth-child(3) {
         display: block;
         left: -100px;
         bottom: 200px;
 
     }
-    .bubles:nth-child(4){
+
+    .bubles:nth-child(4) {
         display: block;
         left: 50px;
         top: 200px;
 
     }
-    .bubles:nth-child(5){
+
+    .bubles:nth-child(5) {
         display: block;
         right: -70px;
         top: 300px;
 
     }
-    .bubles:nth-child(6){
 
-    }
-    .bubles:nth-child(7){
+    .bubles:nth-child(6) {}
+
+    .bubles:nth-child(7) {
         display: block;
         top: 350px;
         left: 180px;
     }
 }
-
-
