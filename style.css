@@ -187,7 +187,8 @@ nav>div {
 }
 
 .game-card {
-    background: rgba(0, 0, 0, 0.176);
+    /* background: rgba(0, 0, 0, 0.176); */
+    background: white;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(2px);
@@ -218,8 +219,8 @@ ul{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 0.9rem;
-    width: 80%;
+    gap: 1.5rem;
+    width: 90%;
 }
 ul li{
     display: flex;
@@ -231,13 +232,15 @@ ul li button{
     color: black;
     border: none;
     outline: none;
-    padding: 0.5rem 0.6rem;
+    padding: 0.7rem 0.6rem;
     letter-spacing: 0.1rem;
     border-radius: 0.4rem;
     width: 100%;
     cursor: pointer;
     font-weight: 600;
     font-size: 0.7rem;
+    box-shadow: 0px 5px 20px rgba(188, 69, 224, 0.483);
+    
 }
 ul li button:hover{
     color: var(--bubles-color);
